@@ -13,6 +13,12 @@ public class ModItems {
     public static final Item MYTHRIL_INGOT = registerItem("mythril_ingot",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
+    public static final Item MYTHRIL_NUGGET = registerItem("mythril_nugget",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
+    public static final Item MYTHRIL_RAW = registerItem("mythril_raw",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
