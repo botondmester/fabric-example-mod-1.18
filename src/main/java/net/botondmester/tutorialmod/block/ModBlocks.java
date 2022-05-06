@@ -18,6 +18,17 @@ public class ModBlocks {
     public static final Block MYTHRIL_BLOCK = registerBlock("mythril_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.MISC);
 
+    public static final Block MYTHRIL_ORE = registerBlock("mythril_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ItemGroup.MISC);
+
+    public static final Block MYTHRIL_ORE_DEEPSLATE = registerBlock("mythril_ore_deepslate",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ItemGroup.MISC);
+
+    public static final Block MYTHRIL_ORE_NETHER = registerBlock("mythril_ore_nether",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ItemGroup.MISC);
+
+    public static final Block MYTHRIL_RAW_BLOCK = registerBlock("mythril_raw_block",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ItemGroup.MISC);
 
     private static Block  registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
